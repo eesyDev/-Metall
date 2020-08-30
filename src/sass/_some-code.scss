@@ -1,0 +1,107 @@
+.search {
+    padding-top: 70px;
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .dropdown {
+            display: flex;
+            flex-direction: column;
+            display: none;
+            transition: all 0.5s ease;
+            margin-top: 20px;
+            border: solid 1px;
+            background-color: #fff;
+            z-index: 999;
+            // &:hover {
+            //     visibility: visible;
+            // }
+            // li {
+            //     clear: both;
+            // }
+        }
+        .dropdown.show {
+            display: block;
+        }
+        .input {
+            width: 300px;
+            height: 40px;
+            input {
+                border: 1px solid #FC7434; 
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+                outline: none;
+                padding: 5px;
+            }
+            .fasearch {
+                position: absolute;
+                left: 379px;
+                top: 90px;
+                color: #FC7434;
+            }
+        }
+        .dropdown-btn {
+            width: 130px;
+            height: 40px;
+            background-color: #FC7434;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5px;
+            .fa {
+                font-size: 20px;
+                font-weight: 600;
+                background-color: #FC7434;
+            }
+            .sm-btn {
+                background-color: transparent;
+                border: none;
+            }
+        }
+        // li:hover > ul,
+        // li:focus-within > ul {
+        //     visibility: visible;
+        // }
+    }
+    .table {
+        width: 100%;
+        z-index: 1;
+        margin-top: 30px;
+        .head {
+            background-color: #E72600;
+        }
+        .dark {
+            background-color: #FC7434;
+        }
+        .light {
+            background-color: #FF9D3B;
+        }
+    }
+    .subheader {
+        height: 50px;
+        padding: 15px;
+    }
+    .buttons-round {
+        margin: 50px 300px 0;
+        .round-btn {
+            background-color: #FC7434;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: none;
+            color: #fff;
+        }
+    }
+    .banner {
+        margin-top: 50px;
+        img {
+            width: 1140px;
+            height: 200px;
+        }
+    }
+    
+}
